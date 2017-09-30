@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "babel-plugin-transform-remove-strict-mode": "0.0.2",
-    "vue-preview": "^1.0.5"
+    "vue-preview": "^1.0.5",
+    "vuex": "^2.4.1"
   }
 }

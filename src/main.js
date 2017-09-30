@@ -22,17 +22,24 @@ import VueResource from "vue-resource"
 
 Vue.use(VueResource)
 
-//6. 导入过滤器
+//7. 导入过滤器
 import "./filters/datefilter"
+
+//8.导入vuex
+import Vuex from 'vuex'
+
+Vue.use(Vuex);
 
 
 //3. 导入路由配置
 import router from "./router/router"
+import store from './store/store.js'
 
 //3. 声明一个新的Vue对象
 var vm = new Vue({
     el: "#app",
     router,
+    store,
     render: function(createElement){
         return createElement(App)
     }

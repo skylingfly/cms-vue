@@ -22,7 +22,7 @@
           </a>
         </li>
         <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-          <a href="#/news/list">
+          <a href="#/goods/list">
             <img src='../../images/menu5.png'>
             <div class="mui-media-body">商品购买</div>
           </a>

@@ -3,9 +3,9 @@
         <!-- 1. 头部 -->
 
         <mt-header fixed title="固定在顶部">
-            <router-link to="/" slot="left">
-                <mt-button icon="back">返回</mt-button>
-            </router-link>
+
+            <mt-button icon="back" slot="left" v-if="$route.path!='/'" @click='$router.go(-1)'>返回</mt-button>
+
         </mt-header>
         <!--路由切换 -->
         <router-view></router-view>
@@ -22,9 +22,8 @@
                 <span class="mui-tab-label">会员</span>
             </router-link>
             <router-link class="mui-tab-item" to="/cart">
-
                 <span class="mui-icon mui-icon-extra mui-icon-extra-cart">
-                    <span class="mui-badge">0</span>
+                    <span class="mui-badge">{{$store.getters.carttotalqty}}</span>
                 </span>
 
                 <span class="mui-tab-label">购物车</span>

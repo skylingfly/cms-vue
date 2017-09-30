@@ -19,6 +19,13 @@ import Newsdetail from '../components/news/details.vue';
 // 图片
 import Picdetail from '../components/pic/details.vue';
 import Piclist from '../components/pic/list.vue';
+//商品
+import Goodslist from '../components/goods/list.vue';
+import Goodsdetail from '../components/goods/detail.vue';
+import Goodsdesc from '../components/goods/desc.vue';
+import Goodscomment from '../components/goods/comment.vue';
+
+
 
 export default new VueRouter({
     routes: [
@@ -33,6 +40,12 @@ export default new VueRouter({
         { path: '/pic/list', redirect: '/pic/list/0'},
         { path: '/pic/list/:id?', component: Piclist},
         { path: '/pic/detail/:id', component: Picdetail},
+        //goods
+        { path: '/goods/list/', component: Goodslist},
+        { path: '/goods/detail/:id', component: Goodsdetail},
+        { path: '/goods/desc/:id', component: Goodsdesc},
+        { path: '/goods/comment/:id', component: Goodscomment},
+       
       
 
     ]

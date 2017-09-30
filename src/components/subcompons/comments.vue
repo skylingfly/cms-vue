@@ -48,7 +48,7 @@ export default {
                 this.$http.get(this.apiUrl + '/api/getcomments/' + this.id + '?pageindex=' + this.pageindex)//只能获取一页
                 .then((res) => {
                     if (res.body.status == 0) {
-                        console.log(res.body);
+                        // console.log(res.body);
                         if(res.body.message.length>0){
                             this.commentlist = this.commentlist.concat(res.body.message);//有新数据多页显示合并
                         }else{
